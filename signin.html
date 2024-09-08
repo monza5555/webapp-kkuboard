@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body style="background-color:#efefef;">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-black fixed-top">
+        <div class="container-fluid">
+            <!-- logo -->
+            <a class="navbar-brand img-fluid" href="#">
+                <img src="/images/logo.png" alt="" width="80" height="60">
+            </a>
+            <!-- menu -->
+            <div class="collapse navbar-collapse d-flex flex-row justify-content-between" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Your Blogs</a>
+                    </li>
+                </ul>
+                <!-- search bar -->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 rounded-5" type="search" placeholder="Search by title"
+                        aria-label="Search">
+                    <button class="btn btn-light rounded-5" type="submit">
+                        <img src="/images/search.png" alt="" width="16" height="16">
+                    </button>
+                </form>
+                <!-- sign in -->
+                <form action="">
+                    <input type="submit" value="sign in" class="btn btn-outline-light active">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- sign in box -->
+    <div class="p-5 w-50 container text-dark-emphasis bg-white rounded-3" style="margin-top:130px;">
+        <div class="container text-center" style="color: #000">
+            <h3>Sign In</h3>
+        </div>
+        <form action="">
+            <!-- Username -->
+            <div class="mb-3">
+                <label for="" class="form-label">Username</label>
+                <input type="username" class="form-control rounded-5" id="" placeholder="username">
+            </div>
+            <!-- Password -->
+            <div class="mb-3">
+                <label for="" class="form-label">Password</label>
+                <input type="password" class="form-control rounded-5" id="" placeholder="password">
+            </div>
+            <!-- button -->
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-dark w-100 mb-1 rounded-5" type="button">Sign In</button>
+                <button class="btn btn-outline-dark w-100 mb-3 rounded-5" type="button">Create Account</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
