@@ -11,93 +11,116 @@
 <body style="background-color:#efefef;">
     <script src="js/bootstrap.min.js"></script>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-black fixed-top">
-        <div class="container-fluid">
-            <!-- logo -->
-            <a class="navbar-brand img-fluid" href="#">
-                <img src="/images/logo.png" alt="" width="80" height="60">
-            </a>
-            <!-- menu -->
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse d-flex flex-row justify-content-between" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Categories</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link active">Your Blogs</a>
-                    </li>
-                </ul>
-                <!-- SEARCH BAR -->
-                <form class="d-flex" role="search">
-                    <input class="form-control rounded-left-5" type="search" placeholder="Search by title"
-                        aria-label="Search">
-                    <button class="btn btn-outline-light" type="submit">
-                        Search
-                    </button>
-                </form>
-                <!-- sign in -->
-                <form action="">
-                    <input type="submit" value="Log out" class="btn btn-outline-danger">
-                </form>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top"">
+        <div class=" container-fluid">
+        <!-- logo -->
+        <a class="navbar-brand img-fluid" href="#">
+            <img src="/images/logo.png" alt="" width="80" height="60">
+        </a>
+        <!-- menu -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">หน้าหลัก</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">หมวดหมู่</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">บล็อกของคุณ</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-1" type="search" placeholder="ค้นหาด้วยชื่อบล็อก" aria-label="Search">
+                <button class="btn btn-outline-light me-4" type="submit">ค้นหา</button>
+            </form>
+            <br>
+            <button class="btn btn-outline-danger rounded-5" type="button">ออกจากระบบ</button>
+        </div>
         </div>
     </nav>
 
-    <div class="p-4 container text-dark-emphasis bg-white rounded-3" style="margin-top:130px">
+    <!-- add blog -->
+    <div class="p-4 w-75 container text-dark-emphasis bg-white rounded-3" style="margin-top:130px; margin-bottom:50px">
         <div class="container" style="color: #000">
-            <h3>Add new blog</h3>
+            <h3>เพิ่มบล็อกใหม่</h3>
         </div>
         <br>
         <form action="">
             <div class="row g-3 align-items-center">
                 <!-- title -->
-                <div class="col-auto w-25">
-                    <label for="" class="col-form-label">Title</label>
+                <div class="col-auto w-25 text-center">
+                    <label for="" class="col-form-label">ชื่อบล็อก</label>
                 </div>
                 <div class="col-auto w-75">
-                    <input type="text" id="" class="form-control" placeholder="Your title" aria-describedby="">
+                    <input type="text" id="" class="form-control" placeholder="ชื่อบล็อกของคุณ" aria-describedby="">
                 </div>
                 <!-- content -->
-                <div class="col-auto w-25">
-                    <label for="" class="col-form-label">Content</label>
+                <div class="col-auto w-25 text-center">
+                    <label for="" class="col-form-label">เนื้อหา</label>
                 </div>
                 <div class="col-auto w-75">
-                    <textarea type="text" id="" class="form-control" placeholder="Your texts" rows="5"
+                    <textarea type="text" id="" class="form-control" placeholder="เนื้อหาในบล็อกของคุณ" rows="5"
                         aria-describedby=""></textarea>
                 </div>
                 <!-- picture -->
-                <div class="col-auto w-25">
-                    <label for="" class="form-label">Picture</label>
+                <div class="col-auto w-25 text-center">
+                    <label for="" class="form-label">รูปภาพ</label>
                 </div>
                 <div class="col-auto w-75">
                     <input class="form-control" type="file" id="">
                 </div>
                 <!-- poll -->
-
+                <div class="col-auto w-25 text-center">
+                    <label for="" class="form-label">โพลล์</label>
+                </div>
+                <div class="col-auto w-75">
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn btn-outline-dark rounded-5" data-bs-toggle="collapse" href="#collapseExample"
+                            role="button" aria-expanded="false" aria-controls="collapseExample">
+                            + เพิ่มโพลล์
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapseExample">
+                        <form action="">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <input type="text" class="form-control" placeholder="ตัวเลือก1">
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="text" class="form-control" placeholder="ตัวเลือก2">
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="text" class="form-control" placeholder="ตัวเลือก3">
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="text" class="form-control" placeholder="ตัวเลือก4">
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="text" class="form-control" placeholder="ตัวเลือก5">
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
                 <!-- category -->
-                <div class="col-auto w-25">
-                    <label for="" class="form-label">Category</label>
+                <div class="col-auto w-25 text-center">
+                    <label for="" class="form-label">หมวดหมู่</label>
                 </div>
                 <div class="col-auto w-75">
                     <select class="form-select" aria-label="">
-                        <option>select your category</option>
+                        <option>เลือกหมวดหมู่บล็อกของคุณ</option>
                         <option value="">A</option>
                         <option value="">B</option>
                         <option value="">C</option>
                     </select>
                 </div>
                 <div class="d-grid gap-2 col-4 mx-auto">
-                    <button class="btn btn-dark px-5 rounded-5" type="button">Upload</button>
+                    <button class="btn btn-dark px-5 rounded-5" type="button">อัพโหลด</button>
                 </div>
             </div>
         </form>

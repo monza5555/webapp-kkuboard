@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog with Poll</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body style="background-color:#efefef;">
+    <script src="js/bootstrap.min.js"></script>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top"">
+        <div class=" container-fluid">
+        <!-- logo -->
+        <a class="navbar-brand img-fluid" href="#">
+            <img src="/images/logo.png" alt="" width="80" height="60">
+        </a>
+        <!-- menu -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">หน้าหลัก</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">หมวดหมู่</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">บล็อกของคุณ</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-1" type="search" placeholder="ค้นหาด้วยชื่อบล็อก" aria-label="Search">
+                <button class="btn btn-outline-light me-4" type="submit">ค้นหา</button>
+            </form>
+            <br>
+            <button class="btn btn-outline-light rounded-5" type="button">เข้าสู่ระบบ</button>
+        </div>
+        </div>
+    </nav>
+
+    <!-- blog box -->
+    <div class="p-5 w-75 container text-dark-emphasis bg-white rounded-3" style="margin-top:130px; margin-bottom:50px">
+        <!-- title -->
+        <div class="container" style="color: #000">
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, dolore?</h3>
+        </div>
+        <!-- category -->
+        <button class="btn btn-dark w-25 rounded-5" type="button">
+            <h5>Lorem, ipsum.</h5>
+        </button>
+        <br><br>
+        <!-- content -->
+        <p class="lead">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea dolor neque, rerum vero nihil explicabo
+            consequuntur esse cumque reprehenderit eaque, quidem nostrum sequi necessitatibus iure ab alias quas dolore
+            provident sed! Eaque cumque sit et sint, aliquid modi provident hic maxime accusantium veritatis in, ullam
+            placeat sunt nobis illum iusto facilis perspiciatis veniam quaerat porro, molestiae tempore dolores nemo
+            repudiandae. A quae quis, nesciunt similique iusto ab facere nobis veritatis?
+        </p>
+        <div class="d-flex justify-content-between">
+            <!-- picture -->
+            <div class="w-50 me-4">
+                <img class="img-fluid rounded-3" src="/images/demopic.jpg" alt="">
+            </div>
+            <!-- poll -->
+            <div class="w-50">
+                <ul class="list-group">
+                    <!-- option before -->
+                    <li class="list-group-item list-group-item-light">
+                        <input class="form-check-input" type="radio" name="a" id="">
+                        <label class="form-check-label" for="a">
+                            ตัวเลือก1
+                        </label>
+                    </li>
+                    <li class="list-group-item list-group-item-light">
+                        <input class="form-check-input" type="radio" name="a" id="">
+                        <label class="form-check-label" for="a">
+                            ตัวเลือก2
+                        </label>
+                    </li>
+                    
+                    <li class="list-group-item list-group-item-light text-center">
+                        <input class="btn btn-dark w-75" type="submit" value="โหวต" name="" id="">
+                    </li>
+                    
+                    <!-- option after -->
+                    <li class="list-group-item list-group-item-light active">
+                        <div class="d-flex justify-content-between">
+                            <p>ตัวเลือก1</p>
+                            <p>32%</p>
+                        </div>
+                        <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-dark" style="width: 32%"></div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-light">
+                        <div class="d-flex justify-content-between">
+                            <p>ตัวเลือก2</p>
+                            <p>68%</p>
+                        </div>
+                        <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-dark" style="width: 68%"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- username & upload date -->
+        <br>
+        <p>username - 28 พฤษภาคม 2022</p>
+
+
+        <!-- add comment -->
+        <form action="">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <textarea type="text" class="form-control" placeholder="แสดงความคิดเห็นของคุณ"></textarea>
+                </li>
+                <li class="list-group-item">
+                    <div class="text-end">
+                        <input type="submit" class="btn btn-outline-dark rounded-5" value="แสดงความคิดเห็น">
+                    </div>
+                </li>
+            </ul>
+        </form>
+        <br>
+        <!-- comments -->
+        <ul class="list-group list-group-flush">
+            <!-- comment -->
+            <li class="list-group-item">
+                <!-- content -->
+                <p class="lead">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, porro!
+                </p>
+                <!-- username & upload date-->
+                <p>username - 28 พฤษภาคม 2022</p>
+            </li>
+            <li class="list-group-item">
+                <p class="lead">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus in, reprehenderit pariatur suscipit
+                    tenetur nostrum veniam et perferendis omnis quidem!
+                </p>
+                <p>username - 28 พฤษภาคม 2022</p>
+            </li>
+            <li class="list-group-item">
+                <p class="lead">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, porro!
+                </p>
+                <p>username - 28 พฤษภาคม 2022</p>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
