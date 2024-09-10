@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home</title>
+    <title>All Blogs</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
@@ -18,42 +18,57 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
         <div class=" container-fluid">
-        <!-- logo -->
-        <a class="navbar-brand img-fluid" href="#">
-            <img src="/images/logo.png" alt="" width="80" height="60">
-        </a>
-        <!-- menu -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a href="#" class="nav-link active">หน้าหลัก</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">หมวดหมู่</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">บล็อกของฉัน</a>
-                </li>
-            </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-1" type="search" placeholder="ค้นหาด้วยชื่อบล็อก" aria-label="Search">
-                <button class="btn btn-outline-light me-4" type="submit">ค้นหา</button>
-            </form>
-            <br>
-            <button class="btn btn-outline-light rounded-5" type="button">เข้าสู่ระบบ</button>
-        </div>
+            <!-- logo -->
+            <a class="navbar-brand img-fluid" href="#">
+                <img src="/images/logo.png" alt="" width="80" height="60">
+            </a>
+            <!-- menu -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">หน้าหลัก</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">หมวดหมู่</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">บล็อกทั้งหมด</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-1" type="search" placeholder="ค้นหาด้วยชื่อบล็อก" aria-label="Search">
+                    <button class="btn btn-outline-light me-4" type="submit">ค้นหา</button>
+                </form>
+                <br>
+                <button class="btn btn-outline-danger rounded-5" type="button">ออกจากระบบ</button>
+            </div>
         </div>
     </nav>
 
-    <!-- latest box -->
+    <!-- all blogs box -->
     <div class="p-4 container text-dark-emphasis bg-white rounded-3" style="margin-top:130px;">
         <div class="container" style="color: #000">
-            <h3>บล็อกล่าสุด</h3><br>
+            <div class="d-flex justify-content-between">
+                <h3>บล็อกทั้งหมด</h3>
+                <!-- filter -->
+                <div class="dropdown">
+                    <button class="btn btn-outline-dark rounded-5 dropdown-toggle" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        กรองบล็อก
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">ใหม่ที่สุด</a></li>
+                        <li><a class="dropdown-item" href="#">เก่าที่สุด</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
+        <br>
         <!-- content boxes -->
         <div class="row row-cols-1 row-cols-md-2 g-4">
             <!-- content box -->
@@ -93,72 +108,6 @@
                             <!-- title -->
                             <h5 class="card-title">
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                            </h5>
-                            <!-- username -->
-                            <h6 class="card-subtitle mb-2 text-body-secondary">
-                                username
-                            </h6>
-                            <div class="d-flex flex-row justify-content-between">
-                                <!-- category -->
-                                <span class="badge text-bg-dark rounded-pill">Lorem, ipsum.</span>
-                                <!-- comment number-->
-                                <div class="icon-link">
-                                    <img src="/images/comment-alt.png" alt="" width="16" height="16">
-                                    5
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <!-- content box -->
-            <div class="col">
-                <div class="card">
-                    <!--  -->
-                    <a href="#" style="text-decoration: none; color: #000;">
-                        <div class="card-body">
-                            <!-- title -->
-                            <h5 class="card-title">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                            </h5>
-                            <!-- username -->
-                            <h6 class="card-subtitle mb-2 text-body-secondary">
-                                username
-                            </h6>
-                            <div class="d-flex flex-row justify-content-between">
-                                <!-- category -->
-                                <span class="badge text-bg-dark rounded-pill">Lorem, ipsum.</span>
-                                <!-- comment number-->
-                                <div class="icon-link">
-                                    <img src="/images/comment-alt.png" alt="" width="16" height="16">
-                                    5
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- popular box -->
-    <div class="p-4 container text-dark-emphasis bg-white rounded-3" style="margin-top:50px; margin-bottom:50px">
-        <div class="container" style="color: #000">
-            <h3>บล็อกยอดนิยม</h3><br>
-        </div>
-        <!-- content boxes -->
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-            <!-- content box -->
-            <div class="col">
-                <div class="card">
-                    <!--  -->
-                    <a href="#" style="text-decoration: none; color: #000;">
-                        <div class="card-body">
-                            <!-- title -->
-                            <h5 class="card-title">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum cumque,
-                                dolore molestias nisi quo veritatis eaque officia numquam. Illo, veniam.
                             </h5>
                             <!-- username -->
                             <h6 class="card-subtitle mb-2 text-body-secondary">

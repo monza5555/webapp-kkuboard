@@ -44,16 +44,29 @@
                 <button class="btn btn-outline-light me-4" type="submit">ค้นหา</button>
             </form>
             <br>
-            <button class="btn btn-outline-light rounded-5" type="button">เข้าสู่ระบบ</button>
+            <button class="btn btn-outline-danger rounded-5" type="button">ออกจากระบบ</button>
         </div>
         </div>
     </nav>
 
     <!-- blog box -->
     <div class="p-5 w-75 container text-dark-emphasis bg-white rounded-3" style="margin-top:130px; margin-bottom:50px">
-        <!-- title -->
         <div class="container" style="color: #000">
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, dolore?</h3>
+            <div class="d-flex justify-content-between">
+                <!-- title -->
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, dolore?</h3>
+                <!-- filter -->
+                <div class="dropdown">
+                    <button class="btn btn-outline-dark rounded-5 dropdown-toggle" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        จัดการบล็อก
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">แก้ไขบล็อก</a></li>
+                        <li><a class="dropdown-item" href="#">ลบบล็อก</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <!-- category -->
         <button class="btn btn-dark w-25 rounded-5" type="button">
