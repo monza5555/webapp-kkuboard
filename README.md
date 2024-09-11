@@ -1,5 +1,5 @@
 # webapp-kkuboard
-ิิbootstrap: https://getbootstrap.com/docs/5.3/getting-started/introduction/
+bootstrap: https://getbootstrap.com/docs/5.3/getting-started/introduction/
 11 pages
 - sign in
 - sign up
